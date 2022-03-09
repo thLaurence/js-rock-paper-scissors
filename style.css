@@ -1,0 +1,200 @@
+html{
+    font-family: 'Akaya Telivigala', cursive;
+}
+
+body{
+    margin: 30px 200px;
+    background-color: #ef8383;
+}
+
+.not-selectable{
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; 
+}
+
+/*BUTTON STYLES*/
+.button-style {
+    background-color: #cc2c2f;
+    cursor: pointer;
+    max-width: 300px;
+    border-radius: 300px;
+    box-shadow: 7px 7px 18px -2px #000000bf;
+    margin: 15px 20px;
+}
+
+.button-style:focus {
+    background-color: #7e110d;
+}
+
+.button-style:hover {
+    background-color: #7e110d;
+}
+
+.button-play {
+    background-color: #cc2c2f;
+    cursor: pointer;
+    max-width: 300px;
+    border-radius: 300px;
+    box-shadow: 7px 7px 18px -2px #000000bf;
+    margin: 15px 20px;
+}
+
+.button-play:hover {
+    background-color: #7e110d;
+}
+
+
+
+/*MAIN STYLES*/
+.main {
+    border: 4px solid #b12427;
+    border-radius: 40px 40px 40px 40px;
+    background-color: #b12427;
+    box-shadow: 9px 8px 13px 6px #000000c9;
+}
+
+.main-title{
+    color: #d2d7d6;
+    text-align: center;
+    font-size: larger;
+}
+
+.main-alternatives {
+    text-align: center;
+    cursor: pointer;
+}
+
+
+/*ALTERNATIVES STYLES*/
+.alternatives {
+    display: inline-block;
+    margin: 40px;
+}
+
+.alternatives-span {
+    color: #d2d7d6;
+    border-left: 2px solid #4b4a4a;
+    border-top: 2px solid #4b4a4a;
+    border-right: 2px solid #000000;
+    border-bottom: 2px solid #000000;
+    border-radius: 15px;
+    background-color: #cc2c2f;
+    display: block;
+}
+
+/*PLAY STYLE*/
+.img-play {
+    max-width: 150px;
+    border-radius: 170px;
+}
+
+.play {
+    margin: 30px;
+    text-align: center;
+}
+
+/*ALERT STYLE*/
+.alert {
+    text-align: center;
+}
+
+.alert h1{
+    display: inline-block;
+    padding: 15px;
+    color: #d2d7d6;
+    border-left: 2px solid #4b4a4a;
+    border-top: 2px solid #4b4a4a;
+    border-right: 2px solid #000000;
+    border-bottom: 2px solid #000000;
+    border-radius: 15px;
+    background-color: #cc2c2f;
+}
+
+/*RESULT STYLE*/
+
+.result {
+    background-color: #7e110d;
+    border-radius: 30px;
+    box-shadow: 9px 8px 13px 6px #000000c9;
+    position: absolute;
+    margin: auto;
+    top: 60px;
+    right: auto;
+    left: 425px;
+}
+
+@media (min-width: 1920px) and (max-width: 2560px)  {
+    .result {
+        background-color: #7e110d;
+        border-radius: 30px;
+        box-shadow: 9px 8px 13px 6px #000000c9;
+        position: absolute;
+        margin: auto;
+        top: 55px;
+        left: 600px;
+    }
+}
+
+.result h1 {
+    color: #d2d7d6;
+    margin: 20px;
+    text-align: center;
+}
+
+.result-img-div {
+    margin: 40px;
+}
+
+.result-img {
+    max-width: 600px;
+    border-radius: 70px;
+    margin: auto;
+    display: block;
+}
+
+.play-again {
+    text-align: center;
+    margin: 30px;
+}
+
+.play-again-button {
+    font-family: 'Akaya Telivigala', cursive;
+    font-size: medium;
+    color: #d2d7d6;
+    background-color: #cc2c2f;
+    cursor: pointer;
+    border-radius: 300px;
+    box-shadow: 7px 7px 18px -2px #000000bf;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+}
+
+/*COUNT STYLES*/
+.count-position {
+    position: relative;
+    left: 100px;
+    bottom: 20px;
+}
+.count {
+    padding: 10px;
+    border-left: 2px solid #4b4a4a;
+    border-top: 2px solid #4b4a4a;
+    border-right: 2px solid #000000;
+    border-bottom: 2px solid #000000;
+    border-radius: 15px;
+    background-color: #cc2c2f;
+    color: #d2d7d6;
+    display: inline-block;
+    margin: 10px;
+    text-align: center; 
+}
+
+.count:hover {
+    background-color: #7e110d;
+    cursor: pointer;
+}
+.count-min {
+    margin: 0px;
+}

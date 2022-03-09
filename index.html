@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <!--FONT-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap" rel="stylesheet">
+
+    <title></title>
+</head>
+<body>
+    <div class="main not-selectable">
+        <div class="main-title">
+            <h1>Rock, paper or scissors</h1>
+        </div>
+        <div class="main-alternatives">
+            <div class="alternatives">   
+                <button name="userOption" onclick="rock()" class="button-style"><img src="src/img/rock.png" alt="rock" srcset=""></button>
+                <span class="alternatives-span">Rock</span>
+            </div>
+            <div class="alternatives">
+                <button name="userOption" onclick="paper()" class="button-style"><img src="src/img/paper.png" alt="paper" srcset=""></button>
+                <span class="alternatives-span">Paper</span>
+            </div>
+            <div class="alternatives">
+                <button name="userOption" onclick="scissors()" class="button-style"><img src="src/img/scissors.png" alt="scissors" srcset=""></button>
+                <span class="alternatives-span">Scissors</span>
+            </div>
+        </div>
+        <div id="alert" class="alert" style="visibility: hidden; position: absolute;">
+            <h1>Select an alternative!</h1>
+        </div>
+        <div class="play">
+            <button name="playStart" onclick="play()" class="button-play"><img src="src/img/play.png" class="img-play" alt="play"></button>
+        </div>
+        <div class="count-position">
+            <div class="count">
+                <h1 class="count-min">Wins</h1>
+                <h2 id="wins"class="count-min">0</h2>
+            </div>
+            <div class="count">
+                <h1 class="count-min">Defeats</h1>
+                <h2 id="defeats" class="count-min">0</h2>
+            </div>
+            <div class="count">
+                <h1 class="count-min">Draws</h1>
+                <h2 id="draws" class="count-min">0</h2>
+            </div>
+        </div>
+    </div>
+    <div id="result" class="result" style="visibility: hidden;">
+        <h1 id="vs_text"></h1>
+        <h1 id="result_text"></h1>
+        <div class="result-img-div">
+            <img class="result-img" src="src/img/result.jpg" alt="result">
+        </div>
+        <div class="play-again">
+            <button class="play-again-button" onclick="again()">Play Again</button>
+        </div>
+    </div>
+    
+</body>
+</html>
